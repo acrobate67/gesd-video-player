@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.acxcom.gesd"
+    versionCode = "10"
+    version     = "1.0.0" >
+
+	<name>GESD</name>
+
+	<description>
+		Application développée sur demande pour la Ville de Laval.
+	</description>
+
+	<author href="http://acxcom.com" email="support@acxcom.com">
+		Sylvain Asselin
+	</author>
+  
+	<preference name="permissions" value="none"/>
+
+    <preference name="orientation" value="landscape" />
+    <preference name="target-device" value="tablet" />
+    <preference name="fullscreen" value="true" />
+    <preference name="android-installLocation" value="auto" />
+
+    <!-- Define app icon -->
+    <icon src="icon.png" />
+    <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+    <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+    <icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+    <icon src="res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+
+    <!-- Define app splash screen -->
+    <gap:splash src="res/screen/android/screen-ldpi-landscape.png" gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="res/screen/android/screen-mdpi-landscape.png" gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="res/screen/android/screen-hdpi-landscape.png" gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="res/screen/android/screen-xhdpi-landscape.png" gap:platform="android" gap:qualifier="port-xhdpi" />
+
+    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
+    <string>100</string>
+    </gap:config-file>
+
+    <access origin="*"/>
+
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+
+</widget>
